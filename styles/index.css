@@ -1,0 +1,154 @@
+/* Eric Meyer's Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+:root {
+  --blue: #0067b8;
+  --indigo: #243a5e;
+  --purple: #8661c5;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #d83b01;
+  --yellow: #ffb900;
+  --green: #107c10;
+  --teal: #008575;
+  --cyan: #30e5d0;
+  --white: #fff;
+  --gray: #505050;
+  --gray-dark: #2f2f2f;
+  --primary: #107c10;
+  --secondary: #000;
+  --success: #107c10;
+  --info: #d2d2d2;
+  --warning: #ffb900;
+  --danger: #dc3545;
+  --light: #fff;
+  --dark: #000;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 540px;
+  --breakpoint-md: 860px;
+  --breakpoint-lg: 1084px;
+  --breakpoint-xl: 1400px;
+  --font-family-sans-serif: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  --font-family-monospace: Consolas, "Courier New", Courier, monospace;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+​ body {
+  line-height: 1;
+  width: 100%;
+  min-height: 100vh;
+}
+
+​ ol,
+ul {
+  list-style: none;
+}
+​ blockquote,
+q {
+  quotes: none;
+}
+​ blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+​
+/* Remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+​
+/* Remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+​ del {
+  text-decoration: line-through;
+}
+​
+/* Tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
