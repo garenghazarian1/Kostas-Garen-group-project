@@ -71,7 +71,6 @@ td {
   border: 0;
   outline: 0;
   font-size: 100%;
-  vertical-align: baseline;
   background: transparent;
 }
 
@@ -97,11 +96,9 @@ td {
   --danger: #dc3545;
   --light: #fff;
   --dark: #000;
-  --breakpoint-xs: 0;
   --breakpoint-sm: 540px;
   --breakpoint-md: 860px;
   --breakpoint-lg: 1084px;
-  --breakpoint-xl: 1400px;
   --font-family-sans-serif: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica,
     Arial, sans-serif;
   --font-family-monospace: Consolas, "Courier New", Courier, monospace;
@@ -152,3 +149,175 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
+/* main------------------------------------ */
+
+/* section1---------------------------------- */
+main{
+  height: max-content;
+}
+.section-1{
+  display: grid;
+
+  grid-template-rows:repeat(11, minmax(280px, 1fr));
+  grid-template-columns: repeat(1, minmax(280px, 1fr));
+  grid-template-areas: 
+  "one"
+  "two"
+  "three"
+  "four"
+  "five"
+  "six"
+  "seven"
+  "eight"
+  "nine"
+  "ten"
+  "eleven";
+  
+  border: 2px solid rgb(255, 255, 255);
+
+}
+
+
+
+.img-game-1{
+ background: url(../img/img-game-001.webp);
+ grid-area: one;
+ border: 1px solid red;
+ 
+}
+
+.img-game-2{
+ background: url(../img/carusel-02.jpg);
+  grid-area: two;
+}
+/* .img-game-2 a img:hover{
+  transform: scale(1.1) ;
+  overflow: hidden;
+} */
+.img-game-3{
+  background-image: url(../img/img-game-003.jpg);
+  grid-area: three;
+}
+.img-game-4{
+  background-image: url(../img/img-game-004.jpg);
+  grid-area: four;
+}
+.img-game-5{
+  background-image: url(../img/img-game-005.jpg);
+  grid-area: five;
+}
+.img-game-6{
+  background-image: url(../img/img-game-006.webp);
+  grid-area: six;
+}
+.img-game-7{
+  background-image: url(../img/img-game-007.jpg);
+  grid-area: seven;
+}
+.img-game-8{
+  background-image: url(../img/img-game-008.jpeg);
+  grid-area: eight;
+}
+.img-game-9{
+  background-image: url(../img/img-game-009.jpg);
+  grid-area: nine;
+}
+.img-game-10{
+  background-image: url(../img/img-game-010.avif);
+  grid-area: ten;
+}
+.img-game-11{
+  background-image: url(../img/img-game-011.webp);
+  grid-area: eleven;
+}
+
+
+.img-div{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover; */
+  border: 2px solid white;
+  overflow:hidden;
+ }
+ 
+ .scale-1{
+  background-image: url(../img/img-game-001.webp);
+ }
+ .scale-2{
+  background: url(../img/carusel-02.jpg);
+ }
+ .scale-3{
+  background-image: url(../img/img-game-003.jpg);
+ }
+ .scale-4{
+  background-image: url(../img/img-game-004.jpg);
+ }
+ .scale-5{
+  background-image: url(../img/img-game-005.jpg);
+ }
+ .scale-6{
+  background-image: url(../img/img-game-006.webp);
+ }
+ .scale-7{
+  background-image: url(../img/img-game-007.jpg);
+ }
+ .scale-8{
+  background-image: url(../img/img-game-008.jpeg);
+ }
+ .scale-9{
+  background-image: url(../img/img-game-009.jpg);
+ }
+ .scale-10{
+  background-image: url(../img/img-game-010.avif);
+ }
+ .scale-11{
+  background-image: url(../img/img-game-011.webp);
+ }
+ .scale-hover{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.7s ease-in-out; 
+ }
+ .scale-hover:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  z-index: -10;
+ }
+
+
+
+ 
+  @media screen and (min-width: 480px ) {
+  
+  }
+  @media screen and (min-width: 768px ) {
+    .section-1{ 
+      grid-template-rows:repeat(11, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+      grid-template-areas: 
+    "one two"
+    "three four"
+    "five six"
+    "seven eight"
+    "nine ten"
+    "eleven eleven";}
+  }
+  @media screen and (min-width: 992px ) {
+  
+    .section-1{grid-template-rows:repeat(6, minmax(400px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+  "one one two three"
+  "one one four four"
+  "five six four four"
+  "seven eight nine ten"
+  "eleven eleven eleven eleven"
+  "eleven eleven eleven eleven" ;} 
+  }
+
