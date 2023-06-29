@@ -151,7 +151,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+/* HEADER MOBILE STYLE START-------------------------------------------------------------- */
 header {
   background-color: var(--light);
   width: 100%;
@@ -278,7 +278,8 @@ header {
 
 .logo-header {
   position: relative;
-  left: 40%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .burger-x {
@@ -337,6 +338,9 @@ header {
   border-bottom: 0px solid black !important;
 }
 
+/* HEADER MOBILE STYLE END ------------------------------------------------------------------ */
+
+/* Section between header and main START MOBILE STYLE----------------------------------- */
 .icon-gr img {
   width: 50px;
   height: 50px;
@@ -382,7 +386,97 @@ header {
   border-color: var(--green);
 }
 
+/* Section between header and main END MOBILE STYLE--------------------------- */
+
+/* <!-- E-SHOP SECTION MOBILE STYLE START --> */
+
+.e-shop {
+  background: url(../img/shopping-background.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-products {
+  position: relative;
+  height: 300px;
+  margin: auto;
+}
+
+.img-products img:nth-child(1) {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.img-products img:nth-child(2) {
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-90%);
+  top: 145px;
+}
+
+.img-products img:nth-child(3) {
+  width: 145px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-15%);
+  top: 150px;
+}
+
+.shop-now-arrow {
+  display: inline-block;
+}
+
+.check-gear {
+  padding: 10px;
+  height: 300px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.check-gear h2 {
+  font-weight: bolder;
+  font-size: 1.6rem;
+  line-height: 40px;
+}
+
+.check-gear p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 40px;
+  padding-top: 10px;
+}
+
+.shop-button {
+  background-color: var(--blue);
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.shop-button a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+.e-back {
+  display: none;
+}
+
+/* <!-- E-SHOP SECTION MOBILE STYLE END --> */
 @media screen and (min-width: 480px) {
+  /*Section between header and main START TABLET STYLE  */
   .icon-gr img {
     width: 100px;
     height: 100px;
@@ -391,13 +485,24 @@ header {
   .icon-a {
     font-size: 1.1rem;
   }
-
-  .logo-header {
-    left: 43%;
+  /*Section between header and main END TABLET STYLE  */
+  /* <!-- E-SHOP SECTION TABLET STYLE START --> */
+  .check-gear h2 {
+    font-size: 1.8rem;
+    line-height: 50px;
   }
+
+  .check-gear p {
+    font-size: 1.1rem;
+    line-height: 50px;
+    padding-top: 10px;
+  }
+
+  /* <!-- E-SHOP SECTION TABLET STYLE END --> */
 }
 
 @media screen and (min-width: 768px) {
+  /* HEADER TABLET LAPTOP START---------- */
   header {
     border: none;
     margin-bottom: 0;
@@ -469,13 +574,60 @@ header {
     border-radius: 10px;
   }
 
+  /* HEADER LAPTOP STYLE END--------------------------- */
+  /*Section between header and main START LAPTOP STYLE  */
   .green-icons {
     display: flex;
     justify-content: space-evenly;
   }
+  /*Section between header and main END TABLET STYLE  */
+
+  /* <!-- E-SHOP SECTION LAPTOP STYLE START --> */
+  .check-gear h2 {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+
+  .check-gear p {
+    font-size: 1.4rem;
+    line-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .shop-button a {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .shop-button {
+    padding: 8px 13px;
+  }
+
+  .img-products img:nth-child(1) {
+    width: 290px;
+    height: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .img-products img:nth-child(2) {
+    width: 135px;
+    height: 135px;
+    top: 160px;
+  }
+
+  .img-products img:nth-child(3) {
+    width: 155px;
+    height: 107px;
+    top: 175px;
+  }
+
+  /* <!-- E-SHOP SECTION LAPTOP STYLE END --> */
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
+  /* HEADER DESKTOP STYLE START--------------------------- */
   .navbar-header li a {
     color: var(--dark);
     font-size: 0.9rem;
@@ -502,4 +654,31 @@ header {
   .sign-in {
     width: 75px;
   }
+  /* HEADER DESKTOP STYLE END--------------------------- */
+
+  /* <!-- E-SHOP SECTION DESKTOP STYLE START --> */
+  .e-shop {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .check-gear {
+    padding: 10px;
+    height: 300px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 60px;
+  }
+
+  .check-gear p {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .shop-button a {
+    font-weight: bolder;
+    font-size: 0.9rem;
+  }
+  /* <!-- E-SHOP SECTION DESKTOP STYLE END --> */
 }

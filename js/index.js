@@ -1,41 +1,24 @@
-document.addEventListener("click", function (event) {
-  var checkbox = document.getElementById("list-devices");
-  var list = document.querySelector(".nav-items");
-  if (!list.contains(event.target)) {
-    checkbox.checked = false;
-  }
+var checkboxes = document.querySelectorAll(".checkbox-j");
+
+checkboxes.forEach(function (checkbox) {
+  checkbox.addEventListener("click", function () {
+    checkboxes.forEach(function (otherCheckbox) {
+      if (otherCheckbox !== checkbox) {
+        otherCheckbox.checked = false;
+      }
+    });
+  });
 });
 
 document.addEventListener("click", function (event) {
-  var checkbox = document.getElementById("list-games");
-  var list = document.querySelector(".nav-items");
-  if (!list.contains(event.target)) {
-    checkbox.checked = false;
-  }
-});
+  var list = document.querySelectorAll(".expand-list");
 
-document.addEventListener("click", function (event) {
-  var checkbox = document.getElementById("list-community");
-  var list = document.querySelector(".nav-items");
-  if (!list.contains(event.target)) {
-    checkbox.checked = false;
-  }
-});
-
-document.addEventListener("click", function (event) {
-  var checkbox = document.getElementById("list-support");
-  var list = document.querySelector(".nav-items");
-  if (!list.contains(event.target)) {
-    checkbox.checked = false;
-  }
-});
-
-document.addEventListener("click", function (event) {
-  var checkbox = document.getElementById("list-developers");
-  var list = document.querySelector(".nav-items");
-  if (!list.contains(event.target)) {
-    checkbox.checked = false;
-  }
+  list.forEach(function (item) {
+    if (!item.contains(event.target)) {
+      var checkbox = item.querySelector(".checkbox-j");
+      checkbox.checked = false;
+    }
+  });
 });
 
 document.addEventListener("click", function (event) {
