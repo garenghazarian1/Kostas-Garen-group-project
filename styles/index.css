@@ -185,8 +185,9 @@ main{
  background: url(../img/img-game-001.webp);
  grid-area: one;
  border: 1px solid red;
- 
+ position: relative;
 }
+
 
 .img-game-2{
  background: url(../img/carusel-02.jpg);
@@ -203,6 +204,7 @@ main{
 .img-game-4{
   background-image: url(../img/img-game-004.jpg);
   grid-area: four;
+  position: relative;
 }
 .img-game-5{
   background-image: url(../img/img-game-005.jpg);
@@ -231,6 +233,7 @@ main{
 .img-game-11{
   background-image: url(../img/img-game-011.webp);
   grid-area: eleven;
+  position: relative;
 }
 
 
@@ -244,6 +247,7 @@ main{
  }
  
  .scale-1{
+ 
   background-image: url(../img/img-game-001.webp);
  }
  .scale-2{
@@ -277,6 +281,7 @@ main{
   background-image: url(../img/img-game-011.webp);
  }
  .scale-hover{
+ 
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -287,8 +292,39 @@ main{
  .scale-hover:hover{
   cursor: pointer;
   transform: scale(1.2);
-  z-index: -10;
  }
+
+ .game-name {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top:70%;
+  left:5% ;
+  z-index: 4;
+}
+.game-name:hover{
+  border-bottom: 2px solid white;
+}
+
+.get-it-now{
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top:85%;
+  left:5% ;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.get-it-now:hover{
+  background-color: rgb(107, 107, 3);
+  border-radius: 5px;
+}
 
 
 
