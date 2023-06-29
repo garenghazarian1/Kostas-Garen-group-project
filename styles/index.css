@@ -71,7 +71,6 @@ td {
   border: 0;
   outline: 0;
   font-size: 100%;
-  vertical-align: baseline;
   background: transparent;
 }
 
@@ -97,11 +96,9 @@ td {
   --danger: #dc3545;
   --light: #fff;
   --dark: #000;
-  --breakpoint-xs: 0;
   --breakpoint-sm: 540px;
   --breakpoint-md: 860px;
   --breakpoint-lg: 1084px;
-  --breakpoint-xl: 1400px;
   --font-family-sans-serif: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica,
     Arial, sans-serif;
   --font-family-monospace: Consolas, "Courier New", Courier, monospace;
@@ -152,3 +149,802 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* HEADER MOBILE STYLE START-------------------------------------------------------------- */
+header {
+  background-color: var(--light);
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 20px;
+  z-index: 3;
+}
+
+header .logo-header img {
+  height: 50px;
+}
+
+header .logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items a {
+  text-decoration: none;
+}
+
+.nav-items label:hover {
+  cursor: pointer;
+}
+
+.list-games {
+  display: none;
+}
+
+#list-games:checked ~ .list-games {
+  display: block;
+}
+
+.list-devices {
+  display: none;
+}
+
+#list-devices:checked ~ .list-devices {
+  display: block;
+}
+
+.list-community {
+  display: none;
+}
+
+#list-community:checked ~ .list-community {
+  display: block;
+}
+
+.list-support {
+  display: none;
+}
+
+#list-support:checked ~ .list-support {
+  display: block;
+}
+
+.list-developers {
+  display: none;
+}
+
+#list-developers:checked ~ .list-developers {
+  display: block;
+}
+
+.list-help {
+  display: none;
+}
+
+#list-help:checked ~ .list-help {
+  display: block;
+}
+
+.profile-icon i {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark);
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+label .close {
+  display: none;
+}
+
+header input:checked ~ label .open {
+  display: none;
+}
+
+header input:checked ~ label .close {
+  display: block;
+}
+
+#navbar-header:checked ~ .navbar-header {
+  left: 0px;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+.action-icon span {
+  display: none;
+}
+
+header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.logo-header {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.burger-x {
+  position: absolute;
+  left: 20px;
+  z-index: 3;
+}
+
+.navbar-header {
+  position: absolute;
+  top: 50px;
+  left: -100%;
+  width: 100%;
+  background-color: var(--info);
+
+  z-index: 2;
+  transition: left 0.5s ease-in-out;
+}
+
+.navbar-header li a {
+  color: var(--dark);
+  font-size: 0.9rem;
+}
+
+.navbar-header li i {
+  font-size: 0.6rem;
+}
+.navbar-header label {
+  color: var(--dark);
+  font-size: 0.9rem;
+}
+
+.navbar-header li {
+  border-bottom: 1px solid darkgrey;
+  line-height: 3rem;
+  padding-left: 10px;
+}
+
+.secondary-list {
+  padding-left: 20px;
+}
+
+.third-list {
+  padding-left: 30px;
+}
+
+.fa-angle-right {
+  display: none;
+}
+
+.nav.items ul li :last-child {
+  border-bottom: none;
+}
+
+.last-li-border {
+  border-bottom: 0px solid black !important;
+}
+
+/* HEADER MOBILE STYLE END ------------------------------------------------------------------ */
+
+/* Section between header and main START MOBILE STYLE----------------------------------- */
+.icon-gr img {
+  width: 50px;
+  height: 50px;
+}
+
+.icon-gr a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: var(--green);
+  display: inline-block;
+}
+
+.icon-gr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  font-size: 0.8rem;
+}
+
+.icon-a span {
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.5s ease-in-out;
+}
+
+.green-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 5px;
+  margin: 20px 20px;
+}
+
+.icon-gr a:hover .icon-a span {
+  border-color: var(--green);
+}
+
+/* Section between header and main END MOBILE STYLE--------------------------- */
+
+/* <!-- E-SHOP SECTION MOBILE STYLE START --> */
+
+.e-shop {
+  background: url(../img/shopping-background.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-products {
+  position: relative;
+  height: 300px;
+  margin: auto;
+}
+
+.img-products img:nth-child(1) {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.img-products img:nth-child(2) {
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-90%);
+  top: 145px;
+}
+
+.img-products img:nth-child(3) {
+  width: 145px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-15%);
+  top: 150px;
+}
+
+.shop-now-arrow {
+  display: inline-block;
+}
+
+.check-gear {
+  padding: 10px;
+  height: 300px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.check-gear h2 {
+  font-weight: bolder;
+  font-size: 1.6rem;
+  line-height: 40px;
+}
+
+.check-gear p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 40px;
+  padding-top: 10px;
+}
+
+.shop-button {
+  background-color: var(--blue);
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.shop-button a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 0.9rem;
+}
+
+.e-back {
+  display: none;
+}
+
+/* <!-- E-SHOP SECTION MOBILE STYLE END --> */
+@media screen and (min-width: 480px) {
+  /*Section between header and main START TABLET STYLE  */
+  .icon-gr img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon-a {
+    font-size: 1.1rem;
+  }
+  /*Section between header and main END TABLET STYLE  */
+  /* <!-- E-SHOP SECTION TABLET STYLE START --> */
+  .check-gear h2 {
+    font-size: 1.8rem;
+    line-height: 50px;
+  }
+
+  .check-gear p {
+    font-size: 1.1rem;
+    line-height: 50px;
+    padding-top: 10px;
+  }
+
+  /* <!-- E-SHOP SECTION TABLET STYLE END --> */
+}
+
+@media screen and (min-width: 768px) {
+  /* HEADER TABLET LAPTOP START---------- */
+  header {
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .logo-header {
+    position: static;
+  }
+
+  .burger-x {
+    display: none;
+  }
+
+  .navbar-header {
+    position: static;
+    background-color: var(--light);
+  }
+
+  .navbar-header li {
+    border: none;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+  }
+
+  .navbar-header li a {
+    color: var(--dark);
+    font-size: 0.8rem;
+  }
+
+  .navbar-header label {
+    color: var(--dark);
+    font-size: 0.8rem;
+  }
+  .expand-list {
+    position: relative;
+  }
+
+  .secondary-list {
+    position: absolute;
+    top: 37px;
+    left: -4px;
+    width: 160px;
+    background-color: var(--light);
+    border-radius: 10px;
+  }
+
+  .name-list {
+    width: 200px;
+  }
+
+  .query-arrow {
+    display: none;
+  }
+
+  .fa-angle-right {
+    display: inline-block;
+  }
+  .third-list {
+    width: 200px;
+    position: absolute;
+    background-color: var(--light);
+    left: 120px;
+    top: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+  }
+
+  /* HEADER LAPTOP STYLE END--------------------------- */
+  /*Section between header and main START LAPTOP STYLE  */
+  .green-icons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /*Section between header and main END TABLET STYLE  */
+
+  /* <!-- E-SHOP SECTION LAPTOP STYLE START --> */
+  .check-gear h2 {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+
+  .check-gear p {
+    font-size: 1.4rem;
+    line-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .shop-button a {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .shop-button {
+    padding: 8px 13px;
+  }
+
+  .img-products img:nth-child(1) {
+    width: 290px;
+    height: 290px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .img-products img:nth-child(2) {
+    width: 135px;
+    height: 135px;
+    top: 160px;
+  }
+
+  .img-products img:nth-child(3) {
+    width: 155px;
+    height: 107px;
+    top: 175px;
+  }
+
+  /* <!-- E-SHOP SECTION LAPTOP STYLE END --> */
+}
+
+@media screen and (min-width: 992px) {
+  /* HEADER DESKTOP STYLE START--------------------------- */
+  .navbar-header li a {
+    color: var(--dark);
+    font-size: 0.9rem;
+  }
+
+  .navbar-header label {
+    color: var(--dark);
+    font-size: 0.9rem;
+  }
+
+  .action-icon span {
+    display: inline-block;
+    width: fit-content;
+  }
+
+  .action-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+  }
+
+  .sign-in {
+    width: 75px;
+  }
+  /* HEADER DESKTOP STYLE END--------------------------- */
+
+  /* <!-- E-SHOP SECTION DESKTOP STYLE START --> */
+  .e-shop {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .check-gear {
+    padding: 10px;
+    height: 300px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 60px;
+  }
+
+  .check-gear p {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .shop-button a {
+    font-weight: bolder;
+    font-size: 0.9rem;
+  }
+  /* <!-- E-SHOP SECTION DESKTOP STYLE END --> */
+}
+
+
+
+/* main------------------------------------ */
+
+/* section1---------------------------------- */
+main{
+  height: max-content;
+}
+.section-1{
+  display: grid;
+
+  grid-template-rows:repeat(11, minmax(280px, 1fr));
+  grid-template-columns: repeat(1, minmax(280px, 1fr));
+  grid-template-areas: 
+  "one"
+  "two"
+  "three"
+  "four"
+  "five"
+  "six"
+  "seven"
+  "eight"
+  "nine"
+  "ten"
+  "eleven";
+  
+  border: 2px solid rgb(255, 255, 255);
+
+}
+
+
+
+.img-game-1{
+ background: url(../img/img-game-001.webp);
+ grid-area: one;
+ border: 1px solid red;
+ position: relative;
+}
+
+
+.img-game-2{
+ background: url(../img/carusel-02.jpg);
+  grid-area: two;
+}
+/* .img-game-2 a img:hover{
+  transform: scale(1.1) ;
+  overflow: hidden;
+} */
+.img-game-3{
+  background-image: url(../img/img-game-003.jpg);
+  grid-area: three;
+}
+.img-game-4{
+  background-image: url(../img/img-game-004.jpg);
+  grid-area: four;
+  position: relative;
+}
+.img-game-5{
+  background-image: url(../img/img-game-005.jpg);
+  grid-area: five;
+}
+.img-game-6{
+  background-image: url(../img/img-game-006.webp);
+  grid-area: six;
+}
+.img-game-7{
+  background-image: url(../img/img-game-007.jpg);
+  grid-area: seven;
+}
+.img-game-8{
+  background-image: url(../img/img-game-008.jpeg);
+  grid-area: eight;
+}
+.img-game-9{
+  background-image: url(../img/img-game-009.jpg);
+  grid-area: nine;
+}
+.img-game-10{
+  background-image: url(../img/img-game-010.avif);
+  grid-area: ten;
+}
+.img-game-11{
+  background-image: url(../img/img-game-011.webp);
+  grid-area: eleven;
+  position: relative;
+}
+
+
+.img-div{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover; */
+  border: 2px solid white;
+  overflow:hidden;
+ }
+ 
+ .scale-1{
+ 
+  background-image: url(../img/img-game-001.webp);
+ }
+ .scale-2{
+  background: url(../img/carusel-02.jpg);
+ }
+ .scale-3{
+  background-image: url(../img/img-game-003.jpg);
+ }
+ .scale-4{
+  background-image: url(../img/img-game-004.jpg);
+ }
+ .scale-5{
+  background-image: url(../img/img-game-005.jpg);
+ }
+ .scale-6{
+  background-image: url(../img/img-game-006.webp);
+ }
+ .scale-7{
+  background-image: url(../img/img-game-007.jpg);
+ }
+ .scale-8{
+  background-image: url(../img/img-game-008.jpeg);
+ }
+ .scale-9{
+  background-image: url(../img/img-game-009.jpg);
+ }
+ .scale-10{
+  background-image: url(../img/img-game-010.avif);
+ }
+ .scale-11{
+  background-image: url(../img/img-game-011.webp);
+ }
+ .scale-hover{
+ 
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.7s ease-in-out; 
+ }
+ .scale-hover:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+ }
+
+ .game-name {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top:70%;
+  left:5% ;
+  z-index: 4;
+}
+.game-name:hover{
+  border-bottom: 2px solid white;
+}
+
+.get-it-now{
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top:85%;
+  left:5% ;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.get-it-now:hover{
+  background-color: rgb(107, 107, 3);
+  border-radius: 5px;
+}
+
+ /* man section1 end----------------------------------------------------------- */
+
+/* footer------------------------------------------------------- */
+footer{
+  background-color: var(--info);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 1rem 1rem;
+}
+footer h3{
+  margin-bottom: 2rem;
+}
+
+.footer-section-1 ul {
+  border-left: 2px solid gray;
+  border-radius: 2px;
+}
+.footer-section-1 ul li ,
+.footer-section-2 ul li {
+  padding: 0.5rem 0.5rem;
+  
+}
+.footer-section-1 ul li a,
+.footer-section-2 ul li a{
+  color: var(--gray-dark);
+  text-decoration: none;
+}
+.footer-section-1{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+ 
+}
+
+.footer-section-2 ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* footer end-------------------------------------------------------------- */
+
+
+/* media brake----------------------------------------------------- */
+ 
+  @media screen and (min-width: 480px ) {
+  
+  }
+  @media screen and (min-width: 768px ) {
+    /* main section1---------- */
+    .section-1{ 
+      grid-template-rows:repeat(6, minmax(280px, 1fr));
+      grid-template-columns: repeat(2, minmax(280px, 1fr));
+      grid-template-areas: 
+    "one two"
+    "three four"
+    "five six"
+    "seven eight"
+    "nine ten"
+    "eleven eleven";}
+/* footer--------------------------------- */
+    .footer-section-1{
+      flex-direction: row;
+    }
+  }
+  @media screen and (min-width: 992px ) {
+  
+    .section-1{grid-template-rows:repeat(6, minmax(400px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+  "one one two three"
+  "one one four four"
+  "five six four four"
+  "seven eight nine ten"
+  "eleven eleven eleven eleven"
+  "eleven eleven eleven eleven" ;} 
+  /* footer-------- */
+  .footer-section-1 {
+    gap: 20%;
+  }
+  .copy-right{
+    margin-left: auto;
+  }
+  }
+
+
+  /* media brake----------------------------------------------------- */
+

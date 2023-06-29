@@ -3,19 +3,485 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>K.G. Gaming</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="icon" type="image/png" href="./img/Title_Logo.png" />
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
 
   <body>
-    <h2>garen</h2>
-    <h2>Kostas</h2>
-    <h2>Bouzianis</h2>
-    <h3>ghazarian</h3>
+
+    <!-- HEADER START------------------------------------------------------------ -->
+    <header>
+      <div class="logo-header">
+        <img src="./img/Title_Logo.png" alt="logo" />
+      </div>
+      <input type="checkbox" id="navbar-header" style="display: none" />
+      <label for="navbar-header" class="burger-x">
+        <i class="fa-solid fa-bars open"></i>
+        <i class="fa-solid fa-xmark close"></i>
+      </label>
+      <nav class="navbar-header">
+        <ul class="nav-items">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <div class="expand-list">
+              <input
+                type="checkbox"
+                id="list-games"
+                style="display: none"
+                class="checkbox-j"
+              />
+              <label for="list-games"
+                >Games <i class="fa-solid fa-chevron-down"></i
+              ></label>
+              <ul class="list-games secondary-list">
+                <li>
+                  <a href="#">Console games</a>
+                </li>
+                <li>
+                  <a href="#">PC games</a>
+                </li>
+                <li class="last-li-border">
+                  <a href="#">Mobile games</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="expand-list">
+              <input
+                type="checkbox"
+                id="list-devices"
+                style="display: none"
+                class="checkbox-j"
+              />
+              <label for="list-devices"
+                >Devices <i class="fa-solid fa-chevron-down"></i
+              ></label>
+              <ul class="list-devices secondary-list">
+                <li>
+                  <a href="#">Consoles</a>
+                </li>
+                <li>
+                  <a href="#">Accesories</a>
+                </li>
+                <li class="last-li-border">
+                  <a href="#">PC devices</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Play</a>
+          </li>
+          <li>
+            <div class="expand-list">
+              <input
+                type="checkbox"
+                id="list-community"
+                style="display: none"
+                class="checkbox-j"
+              />
+              <label for="list-community"
+                >Community <i class="fa-solid fa-chevron-down"></i
+              ></label>
+              <ul class="list-community secondary-list">
+                <li>
+                  <a href="#">Discord server</a>
+                </li>
+                <li>
+                  <a href="#">Steam</a>
+                </li>
+                <li class="last-li-border">
+                  <a href="#">Twitch</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="expand-list">
+              <input
+                type="checkbox"
+                id="list-support"
+                style="display: none"
+                class="checkbox-j"
+              />
+              <label for="list-support"
+                >Support <i class="fa-solid fa-chevron-down"></i>
+              </label>
+              <ul class="list-support secondary-list">
+                <li>
+                  <div>
+                    <input
+                      type="checkbox"
+                      id="list-help"
+                      style="display: none"
+                    />
+                    <label for="list-help"
+                      >Help-topics<i
+                        class="fa-solid fa-chevron-down query-arrow"
+                      ></i>
+                      <i class="fa-solid fa-angle-right"></i
+                    ></label>
+                    <ul class="list-help third-list">
+                      <li>
+                        <a href="#">Account and profile</a>
+                      </li>
+                      <li>
+                        <a href="#">Hardware and network</a>
+                      </li>
+                      <li>
+                        <a href="#">Games and apps</a>
+                      </li>
+                      <li>
+                        <a href="#">Subscriptions and billing</a>
+                      </li>
+                      <li class="last-li-border">
+                        <a href="#">Other topics</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="last-li-border">
+                  <a href="#">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="expand-list">
+              <input
+                type="checkbox"
+                id="list-developers"
+                style="display: none"
+                class="checkbox-j"
+              />
+              <label for="list-developers"
+                >Developers <i class="fa-solid fa-chevron-down"></i
+              ></label>
+              <ul class="list-developers secondary-list name-list">
+                <li>
+                  <a href="#">Konstantinos Bouzianis</a>
+                </li>
+                <li class="last-li-border">
+                  <a
+                    href="https://garenghazarian1.github.io/portfolio-28-06-2023/"
+                    >Garen Ghazarian</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <div class="action-icon">
+          <span>Search</span>
+          <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i>
+        </div>
+        <div class="action-icon">
+          <span>Cart </span>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="action-icon sign-in">
+          <span>Sing in </span>
+          <div class="profile-icon">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END ------------------------------------------------------------------------------ -->
+
+    <!--  Section between header and main START------------------------------------------------------------------------- -->
+    <section class="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-dark">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./img/carusel-01.jpg"
+              class="d-block w-100 vh-100 object-fit-cover"
+              alt="..."
+            />
+            <div
+              class="carousel-caption d-none d-md-block .text-light-emphasis bg-secondary bg-opacity-50 rounded-4"
+            >
+              <h5 class="text-white">Need for speed Unbound</h5>
+              <p class="text-white">
+                Run these streets with PC Game Pass or Ultimate
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm bg-success btn-outline-success text-white"
+              >
+                Get it now
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/carusel-02.jpg"
+              class="d-block w-100 vh-100 object-fit-cover"
+              alt="..."
+            />
+            <div
+              class="carousel-caption d-none d-md-block .text-light-emphasis bg-secondary bg-opacity-50 rounded-4"
+            >
+              <h5 class="text-white">Discover a hidden treasure</h5>
+              <p class="text-white">
+                Embark on adventure and shape your own pirate legend in Sea of
+                Thieves
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm bg-success btn-outline-success text-white"
+              >
+                Get it now
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./img/carousel-03.jpg"
+              class="d-block w-100 vh-100 object-fit-cover"
+              alt="..."
+            />
+            <div
+              class="carousel-caption d-none d-md-block bg-secondary bg-opacity-50 rounded-4"
+            >
+              <h5 class="text-white">Be a champion</h5>
+              <p class="text-white">
+                Win the football championship and become a legend
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm bg-success btn-outline-success text-white"
+              >
+                Get it now
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="green-icons">
+      <div class="icon-gr">
+        <a href="#">
+          <div class="icon-a">
+            <img src="./img/icon-pass.svg" alt="camera" />
+            <span>GAME PASS</span>
+          </div>
+        </a>
+      </div>
+      <div class="icon-gr">
+        <a href="#">
+          <div class="icon-a">
+            <img src="./img/icon-controller.svg" alt="controller" />
+            <span>GAMES</span>
+          </div>
+        </a>
+      </div>
+      <div class="icon-gr">
+        <a href="#">
+          <div class="icon-a">
+            <img src="./img/icon-3.svg" alt="console" />
+            <span>CONSOLES</span>
+          </div>
+        </a>
+      </div>
+      <div class="icon-gr">
+        <a href="#">
+          <div class="icon-a">
+            <img src="./img/icon-4.svg" alt="headphone" />
+            <span>ACCESSORIES</span>
+          </div>
+        </a>
+      </div>
+      <div class="icon-gr">
+        <a href="#">
+          <div class="icon-a">
+            <img src="./img/icon-5.svg" alt="play" />
+            <span>PLAY</span>
+          </div>
+        </a>
+      </div>
+      <div class="icon-gr">
+        <a href="#">
+          <div class="icon-a">
+            <img src="./img/icon-6.svg" alt="sing in" />
+            <span>SING IN</span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!--  Section between header and main ENDS------------------------------------------------------------------------- -->
+
+    <!-- main----------------------------------------- -->
+   <main>
+    <!-- section1---------------------------------------- -->
+    <section class="section-1">
+<div class="img-game-1 img-div">
+  <a class="game-name" href="#">FUTURE WAR</a>
+  <a class="get-it-now" href="#">GET IT NOW &nbsp <i class="fa-solid fa-angle-right"></i></a>
+  <div class="scale-1 scale-hover"></div>
+  
+  </div>
+</div>
+<div class="img-game-2 img-div "><div class="scale-2 scale-hover " ></div><a href="#"></a></div>
+<div class="img-game-3 img-div "><div class="scale-3 scale-hover " ></div><a href="#"></a></div>
+<div class="img-game-4 img-div ">
+  <a class="game-name" href="#">KASPAROV CHESS</a>
+  <a class="get-it-now" href="#">GET IT NOW &nbsp <i class="fa-solid fa-angle-right"></i></a><div class="scale-4 scale-hover " ></div></div>
+<div class="img-game-5 img-div "><div class="scale-5 scale-hover " ></div><a href="#"></a></div>
+<div class="img-game-6 img-div "><div class="scale-6 scale-hover " ></div><a href="#"></a></div>
+<div class="img-game-7 img-div "><div class="scale-7 scale-hover " ></div><a href="#"></a></div>
+<div class="img-game-8 img-div "><div class="scale-8 scale-hover " ></div><a href="#"></a></div>
+<div class="img-game-9 img-div "><div class="scale-9 scale-hover " ></div><a href="#"></a></div>
+<div class="img-game-10 img-div "><div class="scale-10 scale-hover " ></div><a href="#"></a></div>
+<div class="img-game-11 img-div ">
+  <a class="game-name" href="#">ROGUE </a>
+  <a class="get-it-now" href="#">GET IT NOW &nbsp <i class="fa-solid fa-angle-right"></i></a>
+  <div class="scale-11 scale-hover " ></div></div>
+    </section>
+   
+    
+    <!-- E-SHOP SECTION START -->
+    <section class="e-shop">
+      <div class="img-products">
+        <img src="./img/Shop_img_3.png" alt="t-shirt" />
+        <img src="./img/Shop_img_2.png" alt="hat" />
+        <img src="./img/Shop_img_1.png" alt="cup" />
+      </div>
+      <div class="check-gear">
+        <h2>K.G. Gear Shop</h2>
+        <p>Check out our latest gear</p>
+        <div class="shop-button">
+          <a href="#"
+            >SHOP NOW <i class="fa-solid fa-angle-right shop-now-arrow"></i
+          ></a>
+        </div>
+        <a
+          href="https://www.freepik.com/free-photo/3d-render-modern-low-poly-plexus-design_18326859.htm#query=technology%20transparent&position=20&from_view=search&track=ais"
+          class="e-back"
+          >Image by kjpargeter</a
+        >
+      </div>
+    </section>
+    <!-- E-SHOP SECTION END -->
+    
+    
+    
+   </main>
+  
+   <!-- footer----------------------------------------------------- -->
+
+   <footer>
+    <section class="footer-section-1">
+<div>
+  <h3>Browse</h3>
+  <ul>
+    <li><a href="#">KG Consoles</a></li>
+    <li><a href="#">KG games</a></li>
+    <li><a href="#">KG accessories</a></li>
+  </ul>
+</div>
+<div>
+  <h3>Resources</h3>
+  <ul>
+    <li><a href="#">KG News</a></li>
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">Feedback</a></li>
+  </ul>
+</div>
+<div>
+  <h3>KG Store</h3>
+  <ul>
+    <li><a href="#">Check out the latest gear</a></li>
+    <li><a href="#">KG Games</a></li>
+    <li><a href="#">New Games</a></li>
+  </ul>
+</div>
+<div>
+  <h3>Our Developers</h3>
+  <ul>
+    <li><a href="#">Dci</a></li>
+    <li><a href="#">Kostas</a></li>
+    <li><a href="#">Garen</a></li>
+  </ul>
+</div>
+    </section>
+    <section class="footer-section-2">
+<ul>
+  <li><a href="#">Sitemap</a></li>
+  <li><a href="#">Contact KG</a></li>
+  <li><a href="#">Privecy & cookies</a></li>
+  <li><a href="#">Terms of use</a></li>
+  <li><a href="#">About our ads</a></li>
+  <li class="copy-right"><a href="#">"Copyright © 2023 KG Company. All rights reserved."</a></li>
+</ul>
+    </section>
+     
+   </footer>
   </body>
 
+    
+  
+  <script src="./js/index.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
 </html>
