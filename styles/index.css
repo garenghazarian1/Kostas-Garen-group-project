@@ -505,6 +505,8 @@ header {
   header {
     border: none;
     margin-bottom: 0;
+  }
+  header .logo-header {
     margin-left: 10px;
   }
 
