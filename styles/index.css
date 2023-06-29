@@ -326,16 +326,60 @@ main{
   border-radius: 5px;
 }
 
+ /* man section1 end----------------------------------------------------------- */
+
+/* footer------------------------------------------------------- */
+footer{
+  background-color: var(--info);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 1rem 1rem;
+}
+footer h3{
+  margin-bottom: 2rem;
+}
+
+.footer-section-1 ul {
+  border-left: 2px solid gray;
+  border-radius: 2px;
+}
+.footer-section-1 ul li ,
+.footer-section-2 ul li {
+  padding: 0.5rem 0.5rem;
+  
+}
+.footer-section-1 ul li a,
+.footer-section-2 ul li a{
+  color: var(--gray-dark);
+  text-decoration: none;
+}
+.footer-section-1{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+ 
+}
+
+.footer-section-2 ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* footer end-------------------------------------------------------------- */
 
 
+/* media brake----------------------------------------------------- */
  
   @media screen and (min-width: 480px ) {
   
   }
   @media screen and (min-width: 768px ) {
+    /* main section1---------- */
     .section-1{ 
-      grid-template-rows:repeat(11, minmax(280px, 1fr));
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
+      grid-template-rows:repeat(6, minmax(280px, 1fr));
+      grid-template-columns: repeat(2, minmax(280px, 1fr));
       grid-template-areas: 
     "one two"
     "three four"
@@ -343,6 +387,10 @@ main{
     "seven eight"
     "nine ten"
     "eleven eleven";}
+/* footer--------------------------------- */
+    .footer-section-1{
+      flex-direction: row;
+    }
   }
   @media screen and (min-width: 992px ) {
   
@@ -355,5 +403,14 @@ main{
   "seven eight nine ten"
   "eleven eleven eleven eleven"
   "eleven eleven eleven eleven" ;} 
+  /* footer-------- */
+  .footer-section-1 {
+    gap: 20%;
+  }
+  .copy-right{
+    margin-left: auto;
+  }
   }
 
+
+  /* media brake----------------------------------------------------- */
